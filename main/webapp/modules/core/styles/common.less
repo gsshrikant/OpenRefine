@@ -42,7 +42,7 @@ input, select { vertical-align: middle; }
 
 body { 
   font-size: 62.5%; 
-  font-family: Arial, sans-serif; 
+  font-family: "Open Sans"; 
   background: #fff;
   }
 
@@ -104,35 +104,162 @@ a img {
   border: 0;
   }
 
-.button, a.button { 
-  display: inline-block;
-  overflow: visible;
-  font-size: 1em;
-  line-height: 1.4;
-  color: #000;
-  text-decoration: none;
-  padding: 1px 6px;
-  border: 1px solid #bbb;
-  cursor: pointer;
-  background: #eee;
-  white-space: nowrap;
-  font-family: Arial, Helvetica, sans-serif; 
-  .rounded_corners(3px);
-  }
-
 .button:hover, a.button:hover { 
-  border: 1px solid #666;
+  outline: none;
   }
 
 .button:active, a.button:active { 
-  border: 1px solid #000;
+  outline: none;
   }
 
+.button-default, a.button-default { 
+  -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+    display: inline-flex;
+    outline: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 5px 20px 5px 20px;
+    border: none;
+    fill: currentColor;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, -webkit-transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1), -webkit-transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+    background-color: #dedede;
+    color: #1d1d1d;
+    color: var(--mdc-theme-on-secondary, #fff);
+    border-radius: 25px;
+  }
 .button-primary, a.button-primary { 
-  font-weight: bold;
-  padding: 1px 15px;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+      display: inline-flex;
+      outline: none;
+      position: relative;
+      align-items: center;
+      white-space: nowrap;
+      text-align: center;
+      justify-content: center;
+      box-sizing: border-box;
+      padding: 5px 20px 5px 20px;
+      border: none;
+      fill: currentColor;
+      text-decoration: none;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, -webkit-transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+      transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+      transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1), -webkit-transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+      background-color: #11666c;
+      color: #fff;
+      color: var(--mdc-theme-on-secondary, #fff);
+      border-radius: 25px;
   }
 
+.button-success, a.button-success { 
+    -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+      display: inline-flex;
+      outline: none;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      padding: 5px 20px 5px 20px;
+      border: none;
+      fill: currentColor;
+      text-decoration: none;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, -webkit-transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+      transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+      transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1), -webkit-transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+      background-color: #5cb85c;
+      color: #fff;
+      color: var(--mdc-theme-on-secondary, #fff);
+      border-radius: 25px !important;
+  }
+  .button-danger, a.button-danger { 
+    -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+      display: inline-flex;
+      outline: none;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      padding: 5px 20px 5px 20px;
+      border: none;
+      fill: currentColor;
+      text-decoration: none;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, -webkit-transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+      transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+      transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1), -webkit-transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+      background-color: #d9534f;
+      color: #fff;
+      color: var(--mdc-theme-on-secondary, #fff);
+      border-radius: 25px;
+  }
+.button-info, a.button-info { 
+    -webkit-box-shadow: 0 8px 6px -6px black;
+       -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+      display: inline-flex;
+      outline: none;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      padding: 5px 20px 5px 20px;
+      border: none;
+      fill: currentColor;
+      text-decoration: none;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, -webkit-transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+      transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+      transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1), -webkit-transform 270ms 0ms cubic-bezier(0, 0, 0.2, 1);
+      background-color: #5bc0de;
+      color: #fff;
+      color: var(--mdc-theme-on-secondary, #fff);
+      border-radius: 25px;
+  }
 .button-pill-left, a.button-pill-left {
   border-right: 1px solid #bbb;
   .sharp_corners_left();
@@ -146,14 +273,12 @@ a img {
 .button-disabled, a.button-disabled, .button.button-disabled, a.button.button-disabled {
   color: #666;
   border: 1px solid #ddd;
-  background: #f3f3f3;
   cursor: default;
   }
 
 .button-disabled:hover, a.button-disabled:hover {
   color: #666;
   border: 1px solid #ddd;
-  background: #f3f3f3;
   cursor: default;
   }
 
@@ -195,7 +320,6 @@ a img {
 .list-table th {
   font-weight: bold;
   color: #444;
-  background: #f2f2f2;
   }
 
 .list-table-itemname {
@@ -283,7 +407,7 @@ a img {
   }
 
 #body-info .license, #body-info .errorstack {
-  font-family: monospace;
+  font-family: "Open Sans";
   font-size: 1.3em;
   white-space: pre;
   border: 1px solid #ddd;
@@ -399,7 +523,7 @@ div.input-container > input, div.input-container > textarea {
   }
 
 input.code, textarea.code {
-  font-family: monospace;
+  font-family: "Open Sans";
   }
 
 img {
