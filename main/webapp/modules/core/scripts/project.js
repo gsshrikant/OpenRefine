@@ -64,15 +64,16 @@ Refine.reportException = function(e) {
 function resize() {
   var leftPanelWidth = 300;
   var width = $(window).width();
+  // var top = $("#header").outerHeight();
   var top = $("#header").outerHeight();
   var height = $(window).height() - top;
 
   var leftPanelPaddings = ui.leftPanelDiv.outerHeight(true) - ui.leftPanelDiv.height();
   ui.leftPanelDiv
-  .css("top", top + "px")
+  .css("top", top - 40 + "px")
   .css("left", "0px")
-  .css("height", (height - leftPanelPaddings) + "px")
-  .css("width", leftPanelWidth + "px");
+  .css("height", (height - leftPanelPaddings) + 40 + "px")
+  .css("width", leftPanelWidth - 3 + "px");
 
   var leftPanelTabsPaddings = ui.leftPanelTabs.outerHeight(true) - ui.leftPanelTabs.height();
   ui.leftPanelTabs.height(ui.leftPanelDiv.height() - leftPanelTabsPaddings);

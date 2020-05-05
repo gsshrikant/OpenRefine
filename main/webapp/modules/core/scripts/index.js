@@ -193,7 +193,7 @@ $(function() {
     .css("height", ($('#left-panel').height() - leftPanelBodyVPaddings) + "px");
 
     $('#right-panel')
-    .css("left", leftPanelWidth - 5 + "px")
+    .css("left", leftPanelWidth + "px")
     .css("width", (width - leftPanelWidth) + "px");
 
     var rightPanelBodyHPaddings = 5;

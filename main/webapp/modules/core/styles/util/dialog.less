@@ -54,11 +54,11 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   margin: 0 auto;
   text-align: left;
   background: white;
-  border: 1px solid @dialog_frame;
+  //border: 1px solid @dialog_frame;
   }
 
 .dialog-border {
-  border: 4px solid @dialog_border;
+  border: none;
   }
 
 .dialog-header {
@@ -68,6 +68,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   font-size: 1.6em;
   color: #000;
   cursor: move;
+  border-bottom:1px solid #dcdcdc;
   }
 
 .dialog-body {
@@ -83,6 +84,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   font-size: 1.3em;
   background: @dialog_footer;
   padding: @padding_loose;
+  border-top:1px solid #dcdcdc;
   }
 
 .dialog-busy {
