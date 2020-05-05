@@ -187,13 +187,13 @@ $(function() {
     var leftPanelBodyVPaddings = 0;
     // px
     $('#left-panel-body')
-    .css("margin-left", leftPanelBodyHPaddings + "px")
+    //.css("margin-left", leftPanelBodyHPaddings + "px")
     .css("margin-top", leftPanelBodyVPaddings + "px")
     .css("width", ($('#left-panel').width() - leftPanelBodyHPaddings) + "px")
     .css("height", ($('#left-panel').height() - leftPanelBodyVPaddings) + "px");
 
     $('#right-panel')
-    .css("left", leftPanelWidth + "px")
+    .css("left", leftPanelWidth - 5 + "px")
     .css("width", (width - leftPanelWidth) + "px");
 
     var rightPanelBodyHPaddings = 5;
@@ -201,7 +201,7 @@ $(function() {
     var rightPanelBodyVPaddings = 5;
     // px
     $('#right-panel-body')
-    .css("margin-left", rightPanelBodyHPaddings + "px")
+    //.css("margin-left", rightPanelBodyHPaddings + "px")
     .css("margin-top", rightPanelBodyVPaddings + "px")
     .css("width", ($('#right-panel').width() - rightPanelBodyHPaddings) + "px")
     .css("height", ($('#right-panel').height() - rightPanelBodyVPaddings) + "px");

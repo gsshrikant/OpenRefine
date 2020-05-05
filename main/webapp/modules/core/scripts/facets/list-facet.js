@@ -240,7 +240,7 @@ ListFacet.prototype._copyChoices = function() {
   body.html('<textarea disabled wrap="off" bind="textarea" style="display: block; width: 100%; height: 400px;" />');
   var elmts = DOM.bind(body);
 
-  $('<button class="button"></button>').text($.i18n('core-buttons/close')).click(function() {
+  $('<button class="button button-default"></button>').text($.i18n('core-buttons/close')).click(function() {
     DialogSystem.dismissUntil(level - 1);
   }).appendTo(footer);
 
@@ -533,11 +533,11 @@ ListFacet.prototype._editChoice = function(choice, choiceDiv) {
       '<textarea class="data-table-cell-editor-editor" bind="textarea" />' +
       '<div id="data-table-cell-editor-actions">' +
         '<div class="data-table-cell-editor-action">' +
-          '<button class="button" bind="okButton">'+$.i18n('core-buttons/apply')+'</button>' +
+          '<button class="button button-primary" bind="okButton">'+$.i18n('core-buttons/apply')+'</button>' +
           '<div class="data-table-cell-editor-key">'+$.i18n('core-buttons/enter')+'</div>' +
         '</div>' +
         '<div class="data-table-cell-editor-action">' +
-          '<button class="button" bind="cancelButton">'+$.i18n('core-buttons/cancel')+'</button>' +
+          '<button class="button button-default" bind="cancelButton">'+$.i18n('core-buttons/cancel')+'</button>' +
           '<div class="data-table-cell-editor-key">'+$.i18n('core-buttons/esc')+'</div>' +
         '</div>' +
       '</div>'

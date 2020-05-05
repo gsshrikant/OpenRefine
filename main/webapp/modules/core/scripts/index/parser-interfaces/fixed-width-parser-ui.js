@@ -271,7 +271,7 @@ Refine.FixedWidthPreviewTable.prototype._render = function() {
   var addCell = function(tr) {
     var index = tr.cells.length;
     var td = tr.insertCell(index);
-    td.className = (index % 2 === 0) ? 'even' : 'odd';
+    td.className = (index % 2 === 0) ? 'evenc' : 'oddc';
     return td;
   };
 

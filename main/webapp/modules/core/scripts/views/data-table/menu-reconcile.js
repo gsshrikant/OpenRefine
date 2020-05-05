@@ -128,7 +128,7 @@ DataTableColumnHeaderUI.extendMenu(function(column, columnHeaderUI, menu) {
         DialogSystem.dismissUntil(level - 1);
     });
 
-    $('<button class="button"></button>').text($.i18n('core-buttons/cancel')).click(function() {
+    $('<button class="button button-dafault"></button>').text($.i18n('core-buttons/cancel')).click(function() {
       DialogSystem.dismissUntil(level - 1);
     }).appendTo(footer);
 
@@ -154,10 +154,10 @@ DataTableColumnHeaderUI.extendMenu(function(column, columnHeaderUI, menu) {
            .appendTo(select);
     }
 
-    $('<button class="button"></button>').text($.i18n('core-buttons/cancel')).click(function() {
+    $('<button class="button button-dafault"></button>').text($.i18n('core-buttons/cancel')).click(function() {
       DialogSystem.dismissUntil(level - 1);
     }).appendTo(footer);
-    $('<button class="button"></button>').html($.i18n('core-buttons/ok')).click(function() {
+    $('<button class="button button-primary"></button>').html($.i18n('core-buttons/ok')).click(function() {
         
         var service = select.val();
         var identifierSpace = null;

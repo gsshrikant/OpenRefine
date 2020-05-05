@@ -53,7 +53,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   position: absolute;
   overflow: auto;
   border-top: 5px solid @chrome_primary;
-  background: @chrome_secondary;
+  background: @fill_primary;
   }
 .default-importing-parsing-control-panel > table {
   width: 100%;
@@ -63,6 +63,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 td.default-importing-parsing-control-panel-formats {
   padding: @padding_looser 0;
   width: 250px;
+  box-shadow:0px 1px 5px 0px rgba(0,0,0,5), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12);
   }
 
 .default-importing-parsing-control-panel-formats-message {
@@ -80,7 +81,7 @@ td.default-importing-parsing-control-panel-formats {
   }
 
 .default-importing-parsing-control-panel-format.selected {
-  background: white;
+  background: @chrome_primary;
   font-weight: bold;
   color: black;
   }

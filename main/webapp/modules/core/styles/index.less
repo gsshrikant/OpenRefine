@@ -49,9 +49,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   }
 
 #left-panel-body {
-  margin-left: @padding_tight;
+ // margin-left: @padding_tight;
   overflow: hidden;
   position: relative;
+  box-shadow:0px 1px 5px 0px rgba(0,0,0,5), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12)
   }
 
 #action-area-tabs {
@@ -70,6 +71,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #action-area-tabs > li.selected {
   background: @chrome_primary;
   .rounded_corners_left();
+  font-weight: bold;
   }
 
 #project-links {

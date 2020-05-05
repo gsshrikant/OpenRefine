@@ -115,7 +115,7 @@ Refine.DefaultImportingController.prototype._prepareParsingPanel = function() {
 
     elmts.dataPanel
     .css("left", "0px")
-    .css("top", headerHeight + "px")
+    .css("top", headerHeight + 4 + "px")
     .css("width", (width - DOM.getHPaddings(elmts.dataPanel)) + "px")
     .css("height", (height - headerHeight - controlPanelHeight - DOM.getVPaddings(elmts.dataPanel)) + "px");
     elmts.progressPanel

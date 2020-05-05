@@ -45,12 +45,12 @@ function ExpressionPreviewDialog(title, cellIndex, rowIndices, values, expressio
     
     this._elmts = DOM.bind(html);
     
-    $('<button class="button"></button>').html($.i18n('core-buttons/ok')).click(function() {
+    $('<button class="button button-primary"></button>').html($.i18n('core-buttons/ok')).click(function() {
         DialogSystem.dismissUntil(self._level - 1);
         self._onDone(self._previewWidget.getExpression(true));
     }).appendTo(footer);
     
-    $('<button class="button"></button>').text($.i18n('core-buttons/cancel')).click(function() {
+    $('<button class="button button-default"></button>').text($.i18n('core-buttons/cancel')).click(function() {
         DialogSystem.dismissUntil(self._level - 1);
     }).appendTo(footer);
     

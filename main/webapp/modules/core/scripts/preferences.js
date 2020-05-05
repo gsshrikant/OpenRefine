@@ -105,7 +105,7 @@ function PreferenceUI(tr, key, value) {
 
   var td2 = tr.insertCell(2);
 
-  $('<button class="button">').text($.i18n('core-index/edit')).appendTo(td2).click(function() {
+  $('<button class="button button-primary">').text($.i18n('core-index/edit')).appendTo(td2).click(function() {
     var newValue = window.prompt($.i18n('core-index/change-value')+" " + key, value);
     if (newValue !== null) {
       if (key === "userMetadata")  {
@@ -129,7 +129,7 @@ function PreferenceUI(tr, key, value) {
     }
   });
 
-  $('<button class="button">').text($.i18n('core-index/delete')).appendTo(td2).click(function() {
+  $('<button class="button button-primary">').text($.i18n('core-index/delete')).appendTo(td2).click(function() {
     if (window.confirm($.i18n('core-index/delete-key')+" " + key + "?")) {
       Refine.postCSRF(
         "command/core/set-preference",
@@ -177,7 +177,7 @@ function populatePreferences(prefs) {
   var tdLast0 = trLast.insertCell(0);
   trLast.insertCell(1);
   trLast.insertCell(2);
-  $('<button class="button">').text($.i18n('core-index/add-pref')).appendTo(tdLast0).click(function() {
+  $('<button class="button button-primary">').text($.i18n('core-index/add-pref')).appendTo(tdLast0).click(function() {
     var key = window.prompt($.i18n('core-index/add-pref'));
     if (key) {
       var value = window.prompt($.i18n('core-index/pref-key'));

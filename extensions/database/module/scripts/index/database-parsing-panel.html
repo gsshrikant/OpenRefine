@@ -2,10 +2,27 @@
   <div class="grid-layout layout-tightest layout-full">
     <table>
       <tr>
-        <td width="1%"><button bind="startOverButton" class="button">&laquo; Start Over</button></td>
+        <td width="1%"><button bind="startOverButton" class="button button-primary">&laquo; Start Over</button></td>
         <td width="98%" bind="database_conf_pars"></td>
         <td style="text-align: right;" bind="database_proj_name"></td>
-        <td width="1%"><input class="inline" type="text" size="30" bind="projectNameInput" /></td>
+        <td width="1%">
+          <div class="form__group">
+            <input
+              type="text"
+              size="30"
+              id="project-name-input"
+              name="project-name"
+              class="form__field"
+              placeholder="Project name"
+            />
+            <label
+              for="project-name-input"
+              class="form__label"
+              id="projectNameInput"
+            ></label>
+          </div>
+          <!-- <input class="inline" type="text" size="30" bind="projectNameInput" /> -->
+        </td>
         <td width="1%"><button bind="createProjectButton" class="button button-primary"></button></td>
       </tr>	
     </table>	
@@ -21,7 +38,7 @@
     <table>
         <tr>
           <td bind="database_options"></td>
-          <td><button class="button" bind="previewButton"></button></td>
+          <td><button class="button button-primary" bind="previewButton"></button></td>
         </tr>
         <tr>
           <td>

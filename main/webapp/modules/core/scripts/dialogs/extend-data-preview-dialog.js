@@ -391,8 +391,8 @@ ExtendReconciledDataPreviewDialog.prototype._constrainProperty = function(id) {
   var bodyElmts = DOM.bind(body);
 
   footer.html(
-    '<button class="button" bind="okButton">'+$.i18n('core-buttons/ok')+'</button>' +
-    '<button class="button" bind="cancelButton">'+$.i18n('core-buttons/cancel')+'</button>'
+    '<button class="button button-primary" bind="okButton">'+$.i18n('core-buttons/ok')+'</button>' +
+    '<button class="button button-default" bind="cancelButton">'+$.i18n('core-buttons/cancel')+'</button>'
   );
   var footerElmts = DOM.bind(footer);
 
