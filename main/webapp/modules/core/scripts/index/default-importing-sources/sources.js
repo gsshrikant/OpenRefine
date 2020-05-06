@@ -138,3 +138,9 @@ ClipboardImportingSourceUI.prototype.focus = function() {
   this._elmts.textInput.focus();
 };
 
+function getFileName(){
+  var filename = $("#upload").val().replace(/C:\\fakepath\\/i, '');
+  $("#fileSelect").text(filename);
+}
+
+

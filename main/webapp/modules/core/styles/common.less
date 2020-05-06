@@ -623,6 +623,9 @@ p.body-text {
     padding-bottom: 6px;
     border-bottom: 2px solid #11666c;
   }
+  input[value=""] {
+
+  }
 
   .new-button {
     -webkit-box-shadow: 0 8px 6px -6px black;
@@ -655,16 +658,17 @@ p.body-text {
       color: var(--mdc-theme-on-secondary, #1d1d1d);
       border-radius: 28px;
       height:22px;
-}
-input[type="file"] {
-  position: absolute;
-  z-index: -1;
-  top: 5px;
-  left: 8px;
-  font-size: 15px;
-  color: rgb(153,153,153);
-  outline: none;
-}
-.button-wrap {
-  position: relative;
-}
+    }
+    input[type="file"] {
+      display: none;
+      position: absolute;
+      z-index: -1;
+      top: 5px;
+      left: 8px;
+      font-size: 15px;
+      color: rgb(153,153,153);
+      outline: none;
+    }
+    .button-wrap {
+      position: relative;
+    }
